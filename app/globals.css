@@ -1,0 +1,96 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.option {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 5rem;
+  width: 80%;
+  height: 80%;
+  text-align: right;
+}
+
+.option h1 {
+  font-size: 130px;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.option h2 {
+  font-size: 50px;
+  padding: 2rem;
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.option h3 {
+  font-size: 30px;
+  padding: 2rem;
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.option a {
+  font-size: 30px;
+  padding: 2rem;
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.option h5 {
+  font-size: 15px;
+  padding: 0.4rem;
+  text-align: right;
+  font-weight: bold;
+  font-style: italic;
+  background-color: rgb(199, 199, 199);
+}
+
+.option p {
+  font-size: 20px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.option button {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 30px; /* 버튼의 사이즈를 키움 */
+  color: #000000;
+  font-size: 50px;
+}
+
+.option button:hover {
+  color: #f5a9a9; /* 마우스를 올렸을 때의 배경색을 #F5A9A9로 변경 */
+}
+
+.option2 {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 5rem;
+  width: 80%;
+  height: 80%;
+  text-align: right;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+}
+
+/* globals.css */
+.page-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.page-item {
+  flex: 0 0 auto;
+  width: 100%;
+  scroll-snap-align: start;
+}
