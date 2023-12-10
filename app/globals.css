@@ -9,10 +9,18 @@
   width: 80%;
   height: 80%;
   text-align: right;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과를 추가합니다. */
 }
 
 .option h1 {
   font-size: 130px;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.option h6 {
+  font-size: 120px;
   text-align: left;
   font-weight: bolder;
 }
@@ -93,4 +101,73 @@ hr {
   flex: 0 0 auto;
   width: 100%;
   scroll-snap-align: start;
+}
+
+.header {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.header .dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.macWindow {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding: 20px;
+}
+
+.macWindow header {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+}
+.macWindow header .dot {
+  margin-top: 4px;
+  height: 16px; /* 크기를 조절합니다. */
+  width: 16px; /* 크기를 조절합니다. */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: auto; /* 왼쪽 여백을 최대로 주어 오른쪽 정렬됩니다. */
+  margin-right: 10px;
+}
+.macWindow header .red {
+  background-color: #ed594a;
+}
+.macWindow header .yellow {
+  background: #fdd800;
+}
+.macWindow header .green {
+  background: #5ac05a;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+
+  font-size: 18px; /* 원하는 글자 크기로 조절 */
+  text-decoration: none;
+  color: #000000;
+  margin: 4px; /* 간격을 조절합니다. */
+  padding: 8px;
+  transition: margin 0.3s ease; /* 부드러운 변화를 위한 transition 추가 */
+}
+
+.icon svg {
+  margin-right: 4px; /* 아이콘과 텍스트 사이의 간격을 조절 */
 }

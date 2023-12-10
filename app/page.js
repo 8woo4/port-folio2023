@@ -3,10 +3,9 @@
 
 import { useState } from 'react'
 import './globals.css'
-import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import Header from './components/Header'
 import { FaGithub, FaInstagram } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Home() {
   const router = useRouter()
@@ -27,8 +26,17 @@ export default function Home() {
         style={{ backgroundColor: '#8181F7' }}
       >
         <div className="option">
+          <div className="macWindow">
+            <header>
+              <div className="dots">
+                <span className="dot red"></span>
+                <span className="dot yellow"></span>
+                <span className="dot green"></span>
+              </div>
+            </header>
+          </div>
           <h1>김시우의</h1>
-          <h1>웹포트폴리오</h1>
+          <h6>웹포트폴리오</h6>
           <hr />
           <div className="section-wrapper">
             <section className="about-me-section">
@@ -65,7 +73,7 @@ export default function Home() {
                   style={{ display: currentPage === 2 ? 'block' : 'none' }}
                 >
                   <strong>
-                    <h3>홍이김송윤:</h3>
+                    <h3>Admin page:</h3>
                   </strong>
                   <p>
                     Next.js 기반의 프로그램. 관리자 서버를 활용한 승인 사이트
@@ -160,15 +168,27 @@ export default function Home() {
           <div className="section-wrapper">
             <section className="stack-section">
               <h2>Stack</h2>
+              <div className="stack-images">
+                <Image src="/img/html.png" alt="CSS" width={90} height={90} />
+                <Image src="/img/css.png" alt="CSS" width={55} height={55} />
+                <Image
+                  src="/img/js.png"
+                  alt="JavaScript"
+                  width={80}
+                  height={80}
+                />
+                {/* 다른 스택 이미지들도 필요에 따라 추가할 수 있습니다. */}
+              </div>
             </section>
           </div>
-          <div className="project-info">Project Info</div>
+
           <section className="contact-section">
             <h2>Contact</h2>
             <p>Email: openup0102@naver.com </p>
             <p>Other Platforms :</p>
             <>
               <a
+                className="icon"
                 href="https://github.com/8woo4"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -176,6 +196,7 @@ export default function Home() {
                 <FaGithub /> GitHub
               </a>
               <a
+                className="icon"
                 href="https://www.instagram.com/8woo4/"
                 target="_blank"
                 rel="noopener noreferrer"
