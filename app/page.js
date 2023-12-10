@@ -35,17 +35,25 @@ export default function Home() {
               </div>
             </header>
           </div>
-          <h1>김시우의</h1>
-          <h6>웹포트폴리오</h6>
+          <h1>SIWOO's</h1>
+          <h6>WEB PORTFOLIO</h6>
           <hr />
           <div className="section-wrapper">
             <section className="about-me-section">
-              <h2>About Me</h2>
-              <p>
-                안녕하세요. 저는 중부대학교에서 정보보호학을 전공 중인
-                김시우입니다.
-              </p>
-              <p>현재 next.js, HTML, CSS, JavaScript 를 배우고 있습니다.</p>
+              <h2>안녕하세요!</h2>
+              <Image src="/img/me.png" alt="CSS" width={250} height={250} />
+              <p>저는 중부대학교에서 정보보호학을 전공 중인 김시우입니다.</p>
+              <div className="career">
+                <div className="dot"></div>
+                <div className="line"></div>
+                <p>2022.03 / 중부대학교 입학</p>
+              </div>
+              <div className="career">
+                <div className="dot"></div>
+                <div className="line"></div>
+                <p>2023.09 ~ 2023.11 / Team F.N.S. study 활동</p>
+              </div>
+
               <hr />
             </section>
           </div>
@@ -84,7 +92,9 @@ export default function Home() {
                     92212958 윤다혜 92212776 김시우 92212879 송지현 92213029
                     이지인 92213158 홍준희
                   </p>
-                  <p></p>
+                  <a href="https://github.com/8woo4/Shopping">
+                    <h5>GitHub 바로가기</h5>
+                  </a>
                   <a href=""></a>
                 </div>
                 <div
@@ -155,6 +165,7 @@ export default function Home() {
                 </div>
                 {/* 나머지 프로젝트 항목들 추가 */}
               </div>
+
               {/* 페이지 네비게이션 화살표 */}
               <div>
                 <button onClick={handlePrevPage} disabled={currentPage === 1}>
@@ -162,31 +173,50 @@ export default function Home() {
                 </button>
                 <button onClick={handleNextPage}>→</button>
               </div>
+              <a
+                href="https://www.notion.so/6f05ff1a1551493798852976560bf11f?pvs=4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <hr />
+                <h3>Study Notion page→ more study content</h3>
+              </a>
               <hr />
             </section>
           </div>
           <div className="section-wrapper">
             <section className="stack-section">
-              <h2>Stack</h2>
-              <div className="stack-images">
-                <Image src="/img/html.png" alt="CSS" width={90} height={90} />
-                <Image src="/img/css.png" alt="CSS" width={55} height={55} />
+              <h2>Skills</h2>
+              <div className="image-container">
+                <Image
+                  src="/img/html.png"
+                  alt="html"
+                  width={250}
+                  height={250}
+                />
+                <Image src="/img/css.png" alt="CSS" width={145} height={145} />
                 <Image
                   src="/img/js.png"
                   alt="JavaScript"
-                  width={80}
-                  height={80}
+                  width={220}
+                  height={220}
+                />
+                <Image
+                  src="/img/next.png"
+                  alt="next"
+                  width={250}
+                  height={250}
                 />
                 {/* 다른 스택 이미지들도 필요에 따라 추가할 수 있습니다. */}
               </div>
             </section>
           </div>
-
+          <hr />
           <section className="contact-section">
             <h2>Contact</h2>
-            <p>Email: openup0102@naver.com </p>
-            <p>Other Platforms :</p>
-            <>
+            <h3>Email: openup0102@naver.com </h3>
+
+            <div className="icon-container">
               <a
                 className="icon"
                 href="https://github.com/8woo4"
@@ -203,7 +233,7 @@ export default function Home() {
               >
                 <FaInstagram /> Instagram
               </a>
-            </>
+            </div>
           </section>
         </div>
       </main>

@@ -23,6 +23,7 @@
   font-size: 120px;
   text-align: left;
   font-weight: bolder;
+  margin-bottom: 20px;
 }
 
 .option h2 {
@@ -39,6 +40,7 @@
   text-align: left;
   font-weight: bold;
   font-style: italic;
+  margin-top: 20px;
 }
 
 .option a {
@@ -55,7 +57,7 @@
   text-align: right;
   font-weight: bold;
   font-style: italic;
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(249, 201, 179);
 }
 
 .option p {
@@ -170,4 +172,51 @@ hr {
 
 .icon svg {
   margin-right: 4px; /* 아이콘과 텍스트 사이의 간격을 조절 */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 세로 정렬을 위해 추가 */
+  margin-bottom: 50px;
+}
+
+.image {
+  margin: 0 10px;
+  max-width: 100%; /* 부모 요소의 너비에 맞게 조절 */
+  height: auto; /* 가로 세로 비율을 유지하면서 크기 조절 */
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  margin-top: 30px;
+}
+
+.next-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* 원하는 간격으로 조절 */
+}
+
+.career {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 10px;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: black;
+  margin-right: 10px;
+  margin-top: 5px; /* 위쪽으로 여백 추가 */
+  margin-bottom: 5px; /* 아래쪽으로 여백 추가 */
 }
