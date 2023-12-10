@@ -35,7 +35,7 @@ export default function Home() {
               </div>
             </header>
           </div>
-          <h1>SIWOO's</h1>
+          <h1>SIWOO</h1>
           <h6>WEB PORTFOLIO</h6>
           <hr />
           <div className="section-wrapper">
