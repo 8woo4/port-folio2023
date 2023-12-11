@@ -92,7 +92,7 @@ export default function Home() {
                     92212958 윤다혜 92212776 김시우 92212879 송지현 92213029
                     이지인 92213158 홍준희
                   </p>
-                  <a href="https://github.com/8woo4/Shopping">
+                  <a href="https://team-roan-two.vercel.app/">
                     <h5>GitHub 바로가기</h5>
                   </a>
                   <a href=""></a>
