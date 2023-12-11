@@ -93,7 +93,10 @@ export default function Home() {
                     이지인 92213158 홍준희
                   </p>
                   <a href="https://team-roan-two.vercel.app/">
-                    <h5>GitHub 바로가기</h5>
+                    <h5>Vercel 바로가기</h5>
+                  </a>
+                  <a href="https://github.com/8woo4/team">
+                    <h5>github 바로가기</h5>
                   </a>
                   <a href=""></a>
                 </div>
